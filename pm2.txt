@@ -1,0 +1,23 @@
+전역설치
+pm2 npm install pm2@2.10.4 -g
+
+main.js 실행
+pm2 start main.js --watch
+
+로그 찍기
+pm2 log
+
+현재 실행중인 프로세스
+pm2 list
+
+실행중인 모든 프로세스 죽이기
+pm2 kill
+
+백그라운드 daemon 없이 실행
+pm2 start main.js --watch --no-daemon
+
+data 폴더의 하위 파일이 추가되거나 해도 꺼졌다 켜지지 않음
+pm2 start main.js --watch --ignore-watch="data/*" --no-daemon
+
+마찬가지로 data폴더 및 session폴더의 변경이 있어도 꺼졌다 켜지지 않음
+pm2 start main.js --watch --ignore-watch="data/* sessions/*" --no-daemon
