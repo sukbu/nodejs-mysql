@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukbu/nodejs-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sukbu/nodejs-tutorial/issues"
+  },
+  "homepage": "https://github.com/sukbu/nodejs-tutorial#readme",
+  "dependencies": {
+    "mysql": "^2.17.1",
+    "sanitize-html": "^1.20.1"
+  }
+}
